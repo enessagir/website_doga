@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav ul li a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.services {
+  padding: 2rem;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.services ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.services li {
+  flex-basis: 30%;
+  background-color: #f5f5f5;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.services li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.references {
+  padding: 2rem;
+  text-align: center;
+}
+
+.references h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.references ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.references li {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.references blockquote {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.references cite {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.blog {
+  padding: 2rem;
+  text-align: center;
+}
+
+.blog h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog ul {
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog li {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.blog h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog p {
+  margin-bottom: 1rem;
+}
+
+.blog a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.blog a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.hero h1,
+.hero p {
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
